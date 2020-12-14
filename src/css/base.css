@@ -1,6 +1,7 @@
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 em, i {
@@ -27,7 +28,7 @@ a {
 
 a:hover {
     cursor: pointer;
-    color: #c81623;
+    color: #c81623 !important;
 }
 
 button, input {
@@ -50,4 +51,12 @@ body {
 
 .block {
     display: block !important;
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
 }

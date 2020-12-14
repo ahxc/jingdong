@@ -1,10 +1,13 @@
+import './css/base.css';
+import './css/index.css';
+
 window.onload = function() {
   const close = document.getElementsByClassName("close")[0];
   const promotionalTop = document.getElementsByClassName("promotional-top")[0];
   const header = document.getElementsByClassName("header")[0];
   const logo = header.firstElementChild;
   const promotionalLogo = header.lastElementChild;
-  
+
   close.onclick = function(e) {
     e.preventDefault();
     addClass(promotionalTop, "hide");
@@ -19,18 +22,6 @@ window.onload = function() {
       addClass(promotionalLogo, "block");
     }
   }
-}
-
-/* 防抖 */
-function debounce(func, delay=50) {
-  let timer = null;
-  return function(...args) {
-    if (timer) clearTimeout(timer);
-    timer = setTimeout(() => {
-      console.log("执行了1")
-      func.apply(this, args);
-    }, delay);
-  };
 }
 
 /* 添加类 */

@@ -18,6 +18,7 @@
   padding: 0 3px 0;
   top: 5px;
   right: 5px;
+  color: #999;
   background-color: rgba(0, 0, 0, 0.2);
 }
 .close:hover {
@@ -29,28 +30,68 @@
 .w {
   margin: 0 auto;
   height: 100%;
-  width: 1200px;
+}
+.grid-col {
+  margin: 0 auto;
+}
+@media screen and (min-width: 1280px) {
+  .w {
+    width: 1200px;
+  }
+  .grid-col {
+    width: 1200px;
+  }
+  .promotional-top {
+    height: 80px;
+  }
+  .header {
+    width: 190px;
+    height: 120px;
+  }
+  .s-form {
+    width: 550px;
+  }
+  .col-3 {
+    display: block;
+  }
+}
+@media screen and (max-width: 1279px) {
+  .w {
+    width: 990px;
+  }
+  .grid-col {
+    width: 990px;
+  }
+  .promotional-top {
+    height: 66px;
+  }
+  .header {
+    width: 134px;
+    height: 84px;
+  }
+  .s-form {
+    width: 490px;
+  }
+  .col-3 {
+    display: none;
+    opacity: 0;
+  }
 }
 .promotional-top {
   display: block;
   text-align: center;
-  height: 80px;
   background-color: rgba(255, 0, 0);
 }
-/* 广告盒子 */
-.jd-container {
+.promotional-top .w {
   position: relative;
-  width: 1200px;
-  height: 100%;
-  margin: 0 auto;
-  background: url('../image/69201d40388ab2f0.jpg!q70.jpg.webp') no-repeat;
+  background: url('../image/69201d.webp') no-repeat;
   background-size: 100% 100%;
 }
 /* 广告标签盒子 */
 .jd-tag {
   width: 190px;
   height: 100%;
-  background: url('../image/550ad048a9932d05.jpg.webp') no-repeat;
+  background: url('../image/550ad0.webp') no-repeat;
   background-size: contain;
 }
 #shortcut {
@@ -118,7 +159,7 @@
 .qr-m div {
   width: 100%;
   height: 100%;
-  background: url("../image/dc4cf353fd96922e.png.webp") no-repeat;
+  background: url("../image/dc4cf3.webp") no-repeat;
   background-size: 100% 100%;
 }
 .qr-b {
@@ -155,16 +196,16 @@
   background-size: 100% 100%;
 }
 .mobile {
-  background: url("../image/dc4cf353fd96922e.png.webp") no-repeat;
+  background: url("../image/dc4cf3.webp") no-repeat;
 }
 .wechat {
-  background: url("../image/7cbc252ed5993190.png.webp") no-repeat;
+  background: url("../image/7cbc23.webp") no-repeat;
 }
 .economy {
-  background: url("../image/5cf21582b416c186.jpg.webp") no-repeat;
+  background: url("../image/5cf215.webp") no-repeat;
 }
 .health {
-  background: url("../image/9c45c518ad785873.png.webp") no-repeat;
+  background: url("../image/9c45c5.webp") no-repeat;
 }
 .dropdown-layer-w {
   z-index: 2;
@@ -229,15 +270,16 @@ li.select:hover .dropdown-layer-w {
   background-color: #fff;
   display: block;
 }
+#h-container .w {
+  height: 100%;
+}
 #h-container .w div {
   float: left;
 }
 .header {
   position: relative;
-  height: 120px;
-  width: 190px;
   overflow: hidden;
-  margin-top: 10px;
+  margin: auto 0;
 }
 .header h2 {
   font-size: 0;
@@ -261,19 +303,18 @@ li.select:hover .dropdown-layer-w {
   margin-top: -60px;
   height: 120px;
   width: 134px;
-  background: url('../image/18490bf08654ba09.gif') no-repeat;
+  background: url('../image/18490b.gif') no-repeat;
   background-size: contain;
 }
 .search {
   height: 60px;
-  width: 900px;
+  width: 800px;
 }
 .s-form {
   position: relative;
   left: 50px;
   top: 20px;
   height: 34px;
-  width: 550px;
   font-size: 0;
   border: 2px solid rgba(255, 0, 0);
 }
@@ -353,8 +394,7 @@ li.select:hover .dropdown-layer-w {
   bottom: -35px;
   display: flex;
   height: 40px;
-  width: 900px;
-  border: 1px solid #fff;
+  width: 800px;
 }
 .navbar ul {
   display: flex;
@@ -367,4 +407,196 @@ li.select:hover .dropdown-layer-w {
 .navbar ul li .style-hot {
   color: red;
   font-weight: bold;
+}
+#s-container {
+  margin-top: 10px;
+}
+.grid-col {
+  display: flex;
+  justify-content: space-between;
+  height: 470px;
+}
+.col-1 {
+  width: 190px;
+  height: 100%;
+  background-color: #fff;
+}
+.col-1 ul {
+  padding-top: 6px;
+  width: 190px;
+}
+.col-1 li {
+  padding: 3px 0 3px 20px;
+}
+.col-1 li a {
+  font-size: 14px;
+  color: #666;
+}
+.col-1 li:hover {
+  background-color: rgba(227, 228, 229);
+}
+.col-2 {
+  width: 590px;
+}
+.outer {
+  position: relative;
+  width: 590px;
+  height: 470px;
+  overflow: hidden;
+}
+.sw-btn {
+  position: absolute;
+  width: 24px;
+  height: 34px;
+  top: 50%;
+  color: #fff;
+  margin-top: -17px;
+  background-color: rgba(0, 0, 0, 0.1);
+}
+.prev {
+  left: 0;
+  border-radius: 0 17px 17px 0;
+}
+.next {
+  right: 0;
+  border-radius: 17px 0 0 17px;
+}
+.sw-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-shrink: 0;
+}
+.indi {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 20px;
+  padding-left: 20px;
+  width: 100%;
+}
+.indi-i {
+  width: 8px;
+  height: 8px;
+  margin: 0 3px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+}
+.indi-i:hover {
+  background-color: #fff;
+  box-shadow: 0 0 4px 2px rgba(0, 0, 0, 0.1);
+}
+.col-3 {
+  width: 190px;
+  height: 100%;
+  background-color: royalblue;
+}
+.col-4 {
+  width: 190px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.col-4 > div {
+  width: 100%;
+}
+.col-4 hr {
+  width: 90%;
+  margin: 0 auto;
+  opacity: 0.1;
+}
+.col-user {
+  flex: 3;
+  text-align: center;
+  margin-top: 10px;
+}
+.col-user button {
+  width: 80px;
+  height: 26px;
+  border-radius: 13px;
+}
+.user-c {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+.user-p {
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background: url("../image/p.png") no-repeat;
+  background-size: contain;
+}
+.user-d {
+  margin-left: 15px;
+}
+.user-lr {
+  margin-left: 10px;
+  text-align: start;
+}
+.user-lr a {
+  margin: 0 5px;
+}
+.welfare {
+  color: #fff;
+  background-color: red;
+}
+.p-vip {
+  color: gold;
+  background-color: black;
+}
+.col-news {
+  position: relative;
+  flex: 4;
+  padding: 10px;
+}
+.col-news h6 {
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+.news-more {
+  position: absolute;
+  top: 13px;
+  right: 10px;
+  color: #999;
+}
+.col-li {
+  margin: 7px 0;
+  width: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.col-li a {
+  color: #666;
+}
+.news-hot {
+  padding: 2px 6px;
+  margin-right: 5px;
+  color: red;
+  background-color: rgba(253, 238, 237);
+}
+.col-nav {
+  flex: 7;
+  margin-top: 7px;
+}
+.nav-c {
+  display: flex;
+  flex-wrap: wrap;
+}
+.nav-i {
+  flex-shrink: 0;
+  width: 33.33%;
+  height: 55px;
+}
+.nav-i a {
+  text-align: center;
+}
+.nav-i-i {
+  font-size: 20px;
+}
+.nav-i-t {
+  color: #666;
 }
